@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+    <script src="JQuery/jquery.min.js"></script>
+    <script src="pooperJS/popper.min.js"></script>
+    <script src="bootstrapJS/js/bootstrap.min.js"></script>
+    <script src="js/index.js" ></script>
+    <title>Modal Restaurant </title>
+    <style>
+       body {font-family: Arial, Helvetica, sans-serif;}
+        body, html {height: 100%}
+ 
+    </style>
+    </head>
+    <body>
+        <div id="bgimg">
+            <button type="button" class="normal-btn"
+            onclick="document.getElementById('id011').style.display='block'" style="width:auto;">menu</button>
+            <button type="button" class="normal-btn"
+            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">contact</button>
+            <span class="logo">logo</span>
+            <div class="bottom">
+                <p class="mon">monday - friday 10-23 | saturday 14-02</p>
+                <p class="thu">42 village St, New York</p>
+                <p class="bower">Powerd By Arslon</p>
+            </div>
+            <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+                  <div class="header">
+                      <h1 class="h1">Contact</h1>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   
+                  </div>
+              
+                  <div class="container">
+                      <p>Reserve a table, ask for today's special or just send us a message:</p>
+                    <input type="text" placeholder="Name"  required>
+              
+                    <input type="number" placeholder="How Many People"  required>
+
+                    <input type="datetime" placeholder="How Many People"  required>
+
+                    <input type="text" placeholder="Massage"  required>
+                      
+                    <button type="submit">Login</button>
+                  </div>
+                </form>
+              </div>
+              <div id="id011" class="modal">
+  
+                <div class="modal-content animate">
+                  <div class="header">
+                      <h1 class="h1">Startrs</h1>
+                    <span onclick="document.getElementById('id011').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+                <div class="menuu">
+                    <h5>Tomato Soup <b>$2.50</b></h5>
+                    <h5>Chicken Salad <b>$3.50</b></h5>
+                    <h5>Bread and Butter <b>$1.00</b></h5>
+                </div>
+                <div class="header">
+                    <h1 class="h1">Main Course</h1>
+              </div>
+              <div class="menuu">
+                  <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+                  <h5>Italian Pizza <b>$5.50</b></h5>
+                  <h5>Veggie Pasta <b>$4.00</b></h5>
+                  <h5>Chicken and Potatoes <b>$6.50</b></h5>
+                  <h5>Deluxe Burger <b>$5.00</b></h5>
+              </div>
+              <div class="header">
+                <h1 class="h1">Deserts</h1>
+          </div>
+          <div class="menuu">
+              <h5>Fruit Salad <b>$2.50</b></h5>
+              <h5>Ice cream <b>$2.00</b></h5>
+              <h5>Chocolate Cake <b>$4.00</b></h5>
+              <h5>Cheese <b>$5.50</b></h5>
+          </div>
+              </div>
+        </div>
+    </body>
+    <script>
+var modal = document.getElementById('id01');
+var modal1 = document.getElementById('id011');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal,event.target == modal1) {
+        modal.style.display = "none";
+        modal1.style.display = "none";
+    }
+}
+    </script>
+
+</html>
